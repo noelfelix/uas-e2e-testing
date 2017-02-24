@@ -7,9 +7,9 @@ const waitForElement = ($element) => {
 module.exports = {
   CONSTANTS: {
     BASE_PATH: 'https://hippostage.silverorange.com/pcrap/trunk/www',
-    AUTH_PATH: 'https://antidote:cyanide@hippostage.silverorange.com/pcrap/trunk/www',
-    EMAIL: 'isaac@silverorange.com',
-    PASSWORD: 'keen'
+    AUTH_PATH: 'https://antidote:cyanide@hippostage.silverorange.com/pcrap/work-hive/www',
+    EMAIL: 'test@testing.com',
+    PASSWORD: 'test'
   },
   HELPERS: {
     waitForElement,
