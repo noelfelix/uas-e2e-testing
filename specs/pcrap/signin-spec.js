@@ -61,7 +61,7 @@ describe('PCRAP sign-in', () => {
       });
     });
 
-    it('redirects to episode if signed in', () => {
+    it('redirects to episodes if signed in', () => {
       browser.get(`${CONSTANTS.BASE_PATH}/`);
 
       HELPERS.waitForElement(SELECTORS.SIGN_IN.$episode);

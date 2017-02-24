@@ -8,8 +8,8 @@ module.exports = {
   CONSTANTS: {
     BASE_PATH: 'https://hippostage.silverorange.com/hippo-ed/work-hive/dist',
     AUTH_PATH: 'https://antidote:cyanide@hippostage.silverorange.com/hippo-ed/work-hive/dist',
-    EMAIL: 'isaac@silverorange.com',
-    PASSWORD: 'keen'
+    EMAIL: 'test@testing.com',
+    PASSWORD: 'test'
   },
   HELPERS: {
     waitForElement,
