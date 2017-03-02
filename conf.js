@@ -16,5 +16,16 @@ fs
 
 exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs
+  specs,
+  allScriptsTimeout: 20000,
+  jasmineNodeOpts: {
+    showColors: true,
+    defaultTimeoutInterval: 100000,
+    isVerbose: true
+  },
+  capabilities: {
+    browserName: 'chrome',
+    shardTestFiles: true,
+    maxInstances: 4
+  },
 };

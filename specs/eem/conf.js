@@ -1,5 +1,5 @@
 const specs = [
-  'subscribe.js'
+  'register.js'
 ];
 
 exports.config = {
