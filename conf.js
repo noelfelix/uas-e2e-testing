@@ -8,10 +8,11 @@ fs
   .readdirSync(path.resolve(__dirname, SPEC_PARENT_FOLDER))
   .filter(name => fs.statSync(path.resolve(__dirname, SPEC_PARENT_FOLDER, name)).isDirectory())
   .forEach(dir => {
-    require(path.join(__dirname, SPEC_PARENT_FOLDER, dir, 'conf.js')).specs.reduce((coll, item) => {
-      coll.push(`${SPEC_PARENT_FOLDER}/${dir}/${item}`);
-      return coll;
-    }, specs);
+    require(path.join(__dirname, SPEC_PARENT_FOLDER, dir, 'conf.js'))
+      .specs.reduce((coll, item) => {
+        coll.push(`${SPEC_PARENT_FOLDER}/${dir}/${item}`);
+        return coll;
+      }, specs);
   });
 
 exports.config = {
@@ -26,6 +27,6 @@ exports.config = {
   capabilities: {
     browserName: 'chrome',
     shardTestFiles: true,
-    maxInstances: 4
+    maxInstances: specs.length,
   },
 };
